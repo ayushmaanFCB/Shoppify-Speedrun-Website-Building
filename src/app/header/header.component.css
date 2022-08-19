@@ -1,0 +1,29 @@
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    color: wheat;
+    text-decoration: none;
+}
+
+li{
+    display: block;
+    float: left;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bolder;
+    padding: 30px;
+    font-size: 30px;
+    color: wheat;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    background-color: white;
+    color: black;
+}

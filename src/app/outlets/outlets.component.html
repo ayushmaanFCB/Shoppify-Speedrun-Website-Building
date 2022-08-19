@@ -1,0 +1,42 @@
+<style>
+  table {
+    text-align: center;
+    font-weight: bold;
+  }
+  thead {
+    font-size: 28px;
+    background-color: black;
+    color: white;
+  }
+  tbody {
+    font-size: 23px;
+    background: linear-gradient(white, yellow);
+  }
+</style>
+
+<div class="container-fluid">
+  <div class="row" style="background: linear-gradient(white, yellow)">
+    <h2 style="font-weight: bolder; text-align: center">{{ table_title }}</h2>
+  </div>
+  <div class="row">
+    <table border="7px" cellpadding="10px">
+      <thead>
+        <tr>
+          <th>SNo.</th>
+          <th>CITY</th>
+          <th>LOCATION</th>
+          <th>STATE</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let x of data">
+          <td>{{ x.num }}</td>
+          <td>{{ x.city }}</td>
+          <td>{{ x.address }}</td>
+          <td>{{ x.state }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
